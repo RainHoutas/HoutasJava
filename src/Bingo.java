@@ -5,10 +5,18 @@ public class Bingo {
         int[] print=Rand();
         int a=0;
         for(int i=0;i<5;i++){
+            System.out.print("|  ");
             for(int j=0;j<5;j++){
-                System.out.print(print[a]+"   ");
+                if(print[a]<10){
+                    System.out.print(print[a]+"   |  ");
+                }
+                else{
+                    System.out.print(print[a]+"  |  ");
+                }
                 a++;
             }
+            System.out.println();
+            System.out.print("————————————————————————————————————");
             System.out.println();
         }
     }
